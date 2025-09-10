@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://happiestbday-mybf.netlify.app/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="https://happiestbday-mybf.netlify.app/bday.png">
+  <title>happy birthday my girlfriend!!</title>
+  <link rel="icon" href="https://i.ibb.co.com/hXZsYxZ/heart.png">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #1e3a8a;
+      font-family: 'Poppins', sans-serif;
+      overflow: hidden;
+    }
+
+    .page {
+      height: 100vh;
+      width: 100vw;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 1s ease;
+    }
+
+    .page.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .highlight {
+      color: #1e3a8a;
+      font-weight: bold;
+    }
+
+    .button {
+      background-color: #1e3a8a;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      margin-top: 30px;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background-color: #2c4ca5;
+    }
+
+    img {
+      max-width: 70vw;
+      max-height: 50vh;
+      margin-bottom: 20px;
+    }
+
+    .letter {
+      white-space: pre-line;
+      font-size: 1.1rem;
+      max-width: 600px;
+      text-align: left;
+      border-left: 3px solid #1e3a8a;
+      padding-left: 15px;
+      min-height: 200px;
+    }
+
+    .falling {
+      position: fixed;
+      top: -30px;
+      font-size: 24px;
+      animation: fall linear infinite;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    .blue-heart {
+      color: #1e3a8a;
+    }
+
+    .yellow-star {
+      color: #facc15;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(120vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .button {
+        padding: 10px 20px;
+        font-size: 1rem;
+      }
+
+      .letter {
+        font-size: 1rem;
+      }
+    }
+  </style>
+<style>
+      @keyframes fall {
+        to {
+          transform: translateY(110vh);
+          opacity: 0;
+        }
+      }
+    </style></head>
+<body>
+  <div class="page active" id="page1">
+    <img src="./index_files/1.gif" alt="Cute Icon">
+    <h1>Feliz cumpleaños <span class="highlight">mi vida entera!! ❤️</span></h1>
+    <p>Este día es todo tuyo, mi amor… y lo que viene es aún más especial, da clic y descúbrelo ✨</p>
+    <button class="button" onclick="goToPage(2)">Tócale aquí mi amor ‹𝟹</button>
+  </div>
+
+  <div class="page" id="page2">
+    <img src="./index_files/2.gif" alt="Envelope">
+    <p>Cada año te vuelves aún más increíble, mi amor… eres mi todo y hoy celebro a la mujer más hermosa del universo.  
+Feliz cumpleaños, mi vida hermosa ❤️</p>
+<button class="button" onclick="goToPage(3)">Ábrelo mi amor ‹𝟹</button>
+  </div>
+
+  <div class="page" id="page3">
+    <img src="./index_files/3.gif" alt="Heart Icon">
+    <p>Ya eres la cumpleañera más hermosa del mundo, ¿pero también tenías que ser tan perfecta y tan preciosa?  
+No es justo, me vuelves loco mi amor ❤️</p>
+<button class="button" onclick="goToPage(4)"> ‹𝟹</button>
+  </div>
+
+  <div class="page" id="page4">
+    <img src="./index_files/4.gif" alt="Love Note">
+    <p>Está bien, está bien mi amor, este es el último de verdad jeje ❤️  
+Hice algo muy especial para tu cumpleaños, léelo despacito, con calma… es todo para ti 🎂</p>
+<button class="button" onclick="goToPage(5)">Está bien mi vida ‹𝟹</button>
+
+  </div>
+
+  <div class="page" id="page5">
+    <img src="./index_files/image1.jpeg" alt="Cute Love">
+    <h1>Te mereces todo el amor del mundo, hoy y siempre.  
+Feliz cumpleaños, mi vida hermosa 🤍</h1>
+<p>Son solo unas palabras, pero llevan todo el calor y todo mi corazón.</p>
+<button class="button" onclick="goToPage(6)">Ábrelo mi amor (♡˙ᵕ˙♡)</button>
+
+  </div>
+
+  <div class="page" id="page6">
+    <img src="./index_files/image2.jpeg" alt="Cute Love">
+    <h1>Cada año te vuelves más sabia, más tierna y mucho más increíble.  
+Feliz cumpleaños, mi princesa hermosa ♡</h1>
+<p>Solo tú… siendo siempre mi paisaje favorito, lo más hermoso que mis ojos pueden ver.</p>
+<button class="button" onclick="goToPage(7)">♡</button>
+
+  </div>
+
+    <div class="page" id="page7">
+    <img src="./index_files/image.jpeg" alt="Cute Love">
+    <h1>Te juro que cada vez que nos tomamos una foto juntos, termino enamorándome aún más de ti. ❤️</h1>
+<p>Hoy es tu día, mi vida hermosa. Baja un poquito… te dejé una cartita hecha con todo mi corazón 🎂</p>
+<button class="button" onclick="goToPage(8)">♡</button>
+
+  </div>
+
+  <div class="page" id="page8" style="font-family: &#39;Montserrat&#39;, sans-serif;">
+    <h2>Feliz cumpleaños mi taekwondista y pilatista hermosaaaaa!!  ❤️</h2>
+
+    <div class="letter" id="letterText" style="white-space: pre-line; font-size: 1.05rem; max-height: 300px; overflow-y: auto; line-height: 1.6; border-left: 3px solid #3399ff; padding-left: 15px; margin-top: 20px;"></div>
+
+  </div>
+
+  <audio id="bg-music" src="miCancion.mp3" autoplay="" loop="" muted=""></audio>
+
+  <script src="./index_files/confetti.browser.min.js.descarga"></script>
+
+  <script>
+    const fullLetter = `Mi amor, hoy es tu día especial, y quiero desearte todo lo mejor del mundo.  
+Que cada año que pase te haga crecer aún más, más fuerte, más feliz, mi vida hermosa. Que tengas larga vida, que cada deseo tuyo se cumpla, que todo lo que busques lo encuentres y que todo lo que pidas se haga realidad en tu cumpleaños y siempre juntos.  
+Espero que camines en esta vida sabiendo que perteneces a un lugar especial, mi amor. Y aunque a veces las cosas no salgan como quieres, nunca dejes de intentarlo, nunca dejes de luchar por ti mismo, incluso en tus días más difíciles. Recuerda siempre: "Te mereces lo mejor, mereces ser amada y celebrada en todo momento ❤️".  
+Que Dios te conceda todo lo que tu corazón realmente desea, que todo lo que quieras sea bueno para ti, y que acepte todas tus oraciones y sueños, mi amor. Gracias por aceptarme en tu vida 🥺💗.  
+
+A veces lo único en lo que puedes confiar completamente eres tú misma, pero nunca olvides que no estás sola: tienes tu propio corazón, tienes a Dios y me tienes a mí que te amo muchísimo.  
+Que todo lo bueno siempre te acompañe, que el universo siempre esté de tu lado, que tu camino sea siempre fácil y lleno de bendiciones. Sigue creciendo, sigue caminando y sigue siendo feliz. Siempre estaré orgulloso de cada paso que des, mi niña valiente, mi amor fuerte y hermosa.  
+Feliz cumpleaños, mi vida… siempre te apoyaré en todo 💐💗
+
+Con todo mi amor, tu novio para siempre Tonylu❤️`;
+
+    function goToPage(pageNum) {
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(p => p.classList.remove('active'));
+      const next = document.getElementById(`page${pageNum}`);
+      next.classList.add('active');
+
+      if (pageNum === 8) {
+        const music = document.getElementById("bg-music");
+        music.muted = false;
+        music.play().catch(e => console.log("Autoplay blocked:", e));
+
+        confetti({ particleCount: 150, spread: 100, origin: { y: 0.6 } });
+        typeText(fullLetter, document.getElementById('letterText'), 25);
+        startFallingSymbols();
+      }
+    }
+
+    function typeText(text, element, speed) {
+      element.innerHTML = '';
+      let i = 0;
+      function type() {
+        if (i < text.length) {
+          element.innerHTML += text.charAt(i);
+          element.scrollTop = element.scrollHeight;
+          i++;
+          setTimeout(type, speed);
+        }
+      }
+      type();
+    }
+
+    function startFallingSymbols() {
+      setInterval(() => {
+        const el = document.createElement('div');
+        el.classList.add('falling');
+        const isBlueHeart = Math.random() < 0.5;
+        el.innerText = isBlueHeart ? '💙' : '💫';
+        el.style.position = 'fixed';
+        el.style.top = '-30px';
+        el.style.left = Math.random() * 100 + 'vw';
+        el.style.fontSize = '24px';
+        el.style.animation = `fall ${3 + Math.random() * 2}s linear forwards`;
+        document.body.appendChild(el);
+        setTimeout(() => el.remove(), 6000);
+      }, 300);
+    }
+
+    const style = document.createElement('style');
+    style.innerHTML = `
+      @keyframes fall {
+        to {
+          transform: translateY(110vh);
+          opacity: 0;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
+
+
+<div class="glasp-extension-toaster" style="display: block; width: 320px; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; top: 40px; right: 24px; z-index: 9999;"><template shadowrootmode="open"><div class="glasp-extension" style="font-family: inherit;"></div></template></div><div class="glasp-extension" style="display: block; width: unset; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; bottom: 16px; right: 16px; z-index: 9999;"><template shadowrootmode="open"><div class="glasp-extension" style="font-family: inherit;"></div></template></div></body></html>
